@@ -1,0 +1,10 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          prometheus,metrics
+server:
+  port:
+    12222
+

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 
 @Component
-public class ResponseTimeConfiguration {
+public class ResponseTimeBean {
     private Map<String, Integer> delayMap;
     private Map<String, Integer> longDelayMap;
     public boolean delaySwitch;

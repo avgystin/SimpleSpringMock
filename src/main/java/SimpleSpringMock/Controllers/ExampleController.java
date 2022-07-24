@@ -1,6 +1,6 @@
 package SimpleSpringMock.Controllers;
 
-import SimpleSpringMock.Features.ResponseTimeConfiguration;
+import SimpleSpringMock.Features.ResponseTimeBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,16 +11,16 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ExampleController {
     @Autowired
-    ResponseTimeConfiguration responseTimeConfiguration;
+    ResponseTimeBean responseTimeBean;
     Logger logger = LoggerFactory.getLogger(ExampleController.class);
 
     @GetMapping(value = "/exampleGET")
     @ResponseStatus(HttpStatus.OK)
     public Object exampleGet() throws InterruptedException {
-        if (responseTimeConfiguration.isDelaySwitch()) {
-            Thread.sleep(responseTimeConfiguration.getLongDelayMap().get("exampleGET"));
+        if (responseTimeBean.isDelaySwitch()) {
+            Thread.sleep(responseTimeBean.getLongDelayMap().get("exampleGET"));
         } else {
-            Thread.sleep(responseTimeConfiguration.getDelayMap().get("exampleGET"));
+            Thread.sleep(responseTimeBean.getDelayMap().get("exampleGET"));
         }
         return "GET SUCCESS"; // ответ в формате content-type: text/plain;charset=UTF-8
     }
@@ -28,10 +28,10 @@ public class ExampleController {
     @PostMapping(value = "/examplePOST")
     @ResponseStatus(HttpStatus.OK)
     public Object examplePost() throws InterruptedException {
-        if (responseTimeConfiguration.isDelaySwitch()) {
-            Thread.sleep(responseTimeConfiguration.getLongDelayMap().get("examplePOST"));
+        if (responseTimeBean.isDelaySwitch()) {
+            Thread.sleep(responseTimeBean.getLongDelayMap().get("examplePOST"));
         } else {
-            Thread.sleep(responseTimeConfiguration.getDelayMap().get("examplePOST"));
+            Thread.sleep(responseTimeBean.getDelayMap().get("examplePOST"));
         }
         return "POST SUCCESS"; // ответ в формате content-type: text/plain;charset=UTF-8
     }

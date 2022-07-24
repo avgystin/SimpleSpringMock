@@ -1,5 +1,6 @@
-package SimpleSpringMock.Features;
+package SimpleSpringMock.Configuration;
 
+import SimpleSpringMock.Features.ResponseTimeBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,8 +11,8 @@ import java.util.Map;
 public class ConfigurationBeans {
 
     @Bean
-    public ResponseTimeConfiguration getResponseTimeConfiguration() {
-        return new ResponseTimeConfiguration();
+    public ResponseTimeBean getResponseTimeConfiguration() {
+        return new ResponseTimeBean();
     }
 
     // Настройка времени отклика

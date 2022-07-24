@@ -3,8 +3,8 @@ management:
     web:
       exposure:
         include:
-          prometheus,metrics,health
+          prometheus,metrics,health # Список возможных эндпоинтов https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints
 server:
   port:
-    12222
+    12222 # порт на котором будет поднята заглушка
 

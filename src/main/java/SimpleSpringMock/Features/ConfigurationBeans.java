@@ -8,11 +8,13 @@ import java.util.Map;
 
 @Configuration
 public class ConfigurationBeans {
+
     @Bean
     public ResponseTimeConfiguration getResponseTimeConfiguration() {
         return new ResponseTimeConfiguration();
     }
 
+    // Настройка времени отклика
     @Bean
     public Map<String, Integer> delayMap() {
         Map<String, Integer> delayMap = new HashMap<>();
@@ -21,6 +23,7 @@ public class ConfigurationBeans {
         return delayMap;
     }
 
+    // Настройка для теста отказоустойчивости с долгим откликом
     @Bean
     public Map<String, Integer> longDelayMap() {
         Map<String, Integer> longDelayMap = new HashMap<>();

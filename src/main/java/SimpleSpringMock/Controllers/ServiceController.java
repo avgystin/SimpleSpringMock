@@ -18,14 +18,14 @@ public class ServiceController {
     @GetMapping(value = "/setLongDelay")
     @ResponseStatus(HttpStatus.OK)
     public Object setLongDelay(){
-        responseTimeConfiguration.setDelaySwitch(true);
+        responseTimeConfiguration.setDelaySwitch(true); // установка долгого отклика
         return "LongDelayCase == true"; // ответ в формате content-type: text/plain;charset=UTF-8
     }
 
     @GetMapping(value = "/resetLongDelay")
     @ResponseStatus(HttpStatus.OK)
     public Object resetLongDelay(){
-        responseTimeConfiguration.setDelaySwitch(false);
+        responseTimeConfiguration.setDelaySwitch(false); // отмена долгого отклика
         return "LongDelayCase == false"; // ответ в формате content-type: text/plain;charset=UTF-8
     }
 }

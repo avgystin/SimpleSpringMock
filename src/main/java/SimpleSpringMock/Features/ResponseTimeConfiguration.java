@@ -29,11 +29,6 @@ public class ResponseTimeConfiguration {
         this.longDelayMap = longDelayMap;
     }
 
-    public void printDelayMap() {
-        System.out.println("Нормальные отклики " + delayMap);
-        System.out.println("Длинные отклики " + longDelayMap);
-    }
-
     public boolean isDelaySwitch() {
         return delaySwitch;
     }

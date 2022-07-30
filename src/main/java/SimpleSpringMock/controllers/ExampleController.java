@@ -1,6 +1,7 @@
-package SimpleSpringMock.Controllers;
+package SimpleSpringMock.controllers;
 
-import SimpleSpringMock.Features.ResponseTimeBean;
+import SimpleSpringMock.features.ResponseTimeBean;
+import SimpleSpringMock.features.SimpleJSONMapping;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,15 +31,16 @@ public class ExampleController {
 
     @PostMapping(value = "/examplePOSTJSON", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
-    public Object examplePostJSON(@RequestBody Map<String, String> request) throws InterruptedException {
-        // заменяем {"STATUS":"ERROR"} на {"STATUS":"SUCCESS"}
-        request.replace("STATUS", "SUCCESS");
+    public Object examplePostJSON(@RequestBody SimpleJSONMapping simpleJSONMapping) throws InterruptedException {
+        // заменяем {"status":"error","score": 0} на {"status":"success","score": 1}
+        simpleJSONMapping.setStatus("success");
+        simpleJSONMapping.setScore(1);
         if (responseTimeBean.isDelaySwitch()) {
             Thread.sleep(responseTimeBean.getLongDelayMap().get("examplePOST"));
         } else {
             Thread.sleep(responseTimeBean.getDelayMap().get("examplePOST"));
         }
-        return request; // ответ c корреляцией в формате content-type: application/json
+        return simpleJSONMapping; // ответ c корреляцией в формате content-type: application/json
     }
 
     @PostMapping(value = "/examplePOSTXML", produces = MediaType.APPLICATION_XML_VALUE)

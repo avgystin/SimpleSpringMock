@@ -1,6 +1,6 @@
-package SimpleSpringMock.Configuration;
+package SimpleSpringMock.configuration;
 
-import SimpleSpringMock.Features.ResponseTimeBean;
+import SimpleSpringMock.features.ResponseTimeBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,7 +15,7 @@ public class ConfigurationBeans {
         return new ResponseTimeBean();
     }
 
-    // Настройка времени отклика
+    // Настройка времени отклика по умолчанию
     @Bean
     public Map<String, Integer> delayMap() {
         Map<String, Integer> delayMap = new HashMap<>();

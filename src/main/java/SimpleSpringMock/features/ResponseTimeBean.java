@@ -1,4 +1,4 @@
-package SimpleSpringMock.Features;
+package SimpleSpringMock.features;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

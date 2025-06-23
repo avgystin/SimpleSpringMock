@@ -1,0 +1,15 @@
+2025-06-23 17:58:08,903 INFO org.springframework.boot.StartupInfoLogger [main] Starting SimpleSpringMock v1.0-SNAPSHOT using Java 17.0.0.1 on NB36-464 with PID 20444 (C:\Users\iavgustin\JR\SimpleSpringMock\target\SimpleSpringMock-1.0-SNAPSHOT.jar started by iavgustin in C:\Users\iavgustin\JR\SimpleSpringMock\target)
+2025-06-23 17:58:08,908 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-06-23 17:58:10,036 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 12222 (http)
+2025-06-23 17:58:10,054 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-12222"]
+2025-06-23 17:58:10,054 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2025-06-23 17:58:10,054 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-06-23 17:58:10,114 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-06-23 17:58:10,114 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1146 ms
+2025-06-23 17:58:10,709 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-06-23 17:58:10,729 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-12222"]
+2025-06-23 17:58:10,776 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 12222 (http) with context path ''
+2025-06-23 17:58:10,793 INFO org.springframework.boot.StartupInfoLogger [main] Started SimpleSpringMock in 2.404 seconds (JVM running for 2.727)
+2025-06-23 17:59:24,918 INFO org.apache.juli.logging.DirectJDKLog [http-nio-12222-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-23 17:59:24,919 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-12222-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-23 17:59:24,919 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-12222-exec-1] Completed initialization in 0 ms

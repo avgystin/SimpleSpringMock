@@ -1,0 +1,6 @@
+SimpleSpringMock\features\SimpleJSONMapping.class
+SimpleSpringMock\configuration\ConfigurationBeans.class
+SimpleSpringMock\controllers\ExampleController.class
+SimpleSpringMock\controllers\ServiceController.class
+SimpleSpringMock\features\ResponseTimeBean.class
+SimpleSpringMock\SimpleSpringMock.class

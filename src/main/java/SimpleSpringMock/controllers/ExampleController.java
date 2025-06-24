@@ -18,6 +18,12 @@ public class ExampleController {
     ResponseTimeBean responseTimeBean;
     Logger logger = LoggerFactory.getLogger(ExampleController.class);
 
+    @GetMapping(value = "/fastGET")
+    @ResponseStatus(HttpStatus.OK)
+    public Object Get() throws InterruptedException {
+        return "GET SUCCESS"; // ответ в формате content-type: text/plain;charset=UTF-8
+    }
+
     @GetMapping(value = "/exampleGET")
     @ResponseStatus(HttpStatus.OK)
     public Object exampleGet() throws InterruptedException {

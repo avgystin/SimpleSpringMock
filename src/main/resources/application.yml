@@ -1,10 +1,27 @@
 management:
+  endpoint:
+    health:
+      enabled: true
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include:
-          prometheus,metrics,health # Список возможных эндпоинтов https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints
+        include: prometheus,metrics,health # Список возможных эндпоинтов https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.endpoints
+
 server:
-  port:
-    12222 # порт на котором будет поднята заглушка
+  port: 12222
+  tomcat:
+    max-threads: 200
+    accept-count: 100
+    min-spare-threads: 20
+    max-connections: 10000
+    mbeanregistry:
+      enabled: true
+
+spring:
+  jmx:
+    enabled: true
 

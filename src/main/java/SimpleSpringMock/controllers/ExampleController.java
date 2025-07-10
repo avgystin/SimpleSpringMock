@@ -20,7 +20,7 @@ public class ExampleController {
 
     @GetMapping(value = "/fastGET")
     @ResponseStatus(HttpStatus.OK)
-    public Object Get() throws InterruptedException {
+    public Object fastGet() {
         return "GET SUCCESS"; // ответ в формате content-type: text/plain;charset=UTF-8
     }
 

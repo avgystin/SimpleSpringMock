@@ -14,10 +14,11 @@ management:
 server:
   port: 12222
   tomcat:
-    max-threads: 200
+    threads:
+      max: 2000
+      min-spare: 20
     accept-count: 100
-    min-spare-threads: 20
-    max-connections: 10000
+    max-connections: 20000
     mbeanregistry:
       enabled: true
 

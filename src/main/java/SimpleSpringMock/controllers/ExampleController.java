@@ -52,10 +52,12 @@ public class ExampleController {
     @PostMapping(value = "/examplePOSTXML", produces = MediaType.APPLICATION_XML_VALUE)
     @ResponseStatus(HttpStatus.OK)
     public String examplePostXML(@RequestBody String request) throws InterruptedException {
-        // заменяем <REQUEST>
+        // заменяем
+        // <REQUEST>
         //    <STATUS>ERROR</STATUS>
         //</REQUEST>
-        // на <RESPONSE>
+        // на
+        // <RESPONSE>
         //    <STATUS>SUCCESS</STATUS>
         //</RESPONSE>
         String response = request.replaceFirst("ERROR", "SUCCESS").replaceAll("REQUEST", "RESPONSE");

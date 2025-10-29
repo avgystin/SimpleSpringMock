@@ -1,0 +1,96 @@
+2025-07-03 16:14:58,895 INFO org.springframework.boot.StartupInfoLogger [main] Starting SimpleSpringMock using Java 17.0.0.1 on NB36-464 with PID 37924 (C:\Users\iavgustin\JR\SimpleSpringMock\target\classes started by iavgustin in C:\Users\iavgustin\JR\SimpleSpringMock)
+2025-07-03 16:14:58,903 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-03 16:15:00,023 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 12222 (http)
+2025-07-03 16:15:00,048 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-12222"]
+2025-07-03 16:15:00,048 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 16:15:00,048 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-07-03 16:15:00,143 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 16:15:00,143 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1190 ms
+2025-07-03 16:15:00,868 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-07-03 16:15:00,895 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-12222"]
+2025-07-03 16:15:00,899 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 12222 is already in use
+2025-07-03 16:15:00,903 INFO org.apache.juli.logging.DirectJDKLog [main] Pausing ProtocolHandler ["http-nio-12222"]
+2025-07-03 16:15:00,903 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2025-07-03 16:15:00,915 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping ProtocolHandler ["http-nio-12222"]
+2025-07-03 16:15:00,915 INFO org.apache.juli.logging.DirectJDKLog [main] Destroying ProtocolHandler ["http-nio-12222"]
+2025-07-03 16:15:00,915 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-03 16:15:00,947 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 12222 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 12222 or configure this application to listen on another port.
+
+2025-07-03 17:18:20,604 INFO org.springframework.boot.StartupInfoLogger [main] Starting SimpleSpringMock using Java 17.0.0.1 on NB36-464 with PID 38316 (C:\Users\iavgustin\JR\SimpleSpringMock\target\classes started by iavgustin in C:\Users\iavgustin\JR\SimpleSpringMock)
+2025-07-03 17:18:20,612 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-03 17:18:21,797 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 12222 (http)
+2025-07-03 17:18:21,820 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:21,820 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 17:18:21,820 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-07-03 17:18:21,897 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 17:18:21,897 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1229 ms
+2025-07-03 17:18:22,561 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-07-03 17:18:22,584 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:22,584 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 12222 is already in use
+2025-07-03 17:18:22,600 INFO org.apache.juli.logging.DirectJDKLog [main] Pausing ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:22,600 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2025-07-03 17:18:22,600 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:22,600 INFO org.apache.juli.logging.DirectJDKLog [main] Destroying ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:22,617 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-03 17:18:22,632 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 12222 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 12222 or configure this application to listen on another port.
+
+2025-07-03 17:18:55,286 INFO org.springframework.boot.StartupInfoLogger [main] Starting SimpleSpringMock using Java 17.0.0.1 on NB36-464 with PID 34016 (C:\Users\iavgustin\JR\SimpleSpringMock\target\classes started by iavgustin in C:\Users\iavgustin\JR\SimpleSpringMock)
+2025-07-03 17:18:55,290 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-07-03 17:18:56,549 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 12222 (http)
+2025-07-03 17:18:56,555 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:56,555 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2025-07-03 17:18:56,555 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-07-03 17:18:56,658 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-07-03 17:18:56,658 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1291 ms
+2025-07-03 17:18:57,288 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 4 endpoint(s) beneath base path '/actuator'
+2025-07-03 17:18:57,319 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:57,319 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 12222 is already in use
+2025-07-03 17:18:57,327 INFO org.apache.juli.logging.DirectJDKLog [main] Pausing ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:57,327 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2025-07-03 17:18:57,336 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:57,336 INFO org.apache.juli.logging.DirectJDKLog [main] Destroying ProtocolHandler ["http-nio-12222"]
+2025-07-03 17:18:57,336 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-03 17:18:57,358 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 12222 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 12222 or configure this application to listen on another port.
+
